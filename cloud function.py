@@ -6,7 +6,7 @@ def startDataflowProcess(data, context):
 	#path of the dataflow template on google storage bucket
 	template = "gs://dataflow-templates/latest/Word_Count"
 	inputFile = "gs://" + str(data['bucket']) + "/" + str(data['name'])
-	output = "gs://qwiklabs-gcp-04-14bcaee82d4t/output"
+	output = "gs://qwiklabs-gcp-04-14bcaee82d4t/output" #change with your output path
 	#user defined parameters to pass to the dataflow pipeline job
 	parameters = {
 		'inputFile': inputFile,
